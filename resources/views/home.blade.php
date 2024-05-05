@@ -25,7 +25,6 @@
                     </div>
                 @endforeach
             </div>
-            <button data-bs-toggle="modal" data-bs-target="#aboutModal" class="btn btn-primary">About</button>
         </div>
         <div class="col-12 col-lg-6 mb-2">
             <div class="card">

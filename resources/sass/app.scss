@@ -1,0 +1,70 @@
+@import 'bootstrap/scss/bootstrap';
+
+.display-easing-function{
+    height: 10rem;
+}
+
+.curve-container {
+    position: relative;
+}
+
+.dot {
+    background-color: white;
+    position: absolute;
+    height: 0.25rem;
+    width: 0.25rem;
+    border-radius: 50%;
+}
+
+#grapher-container, .main-easing-display {
+    height: 30rem;
+    width: 100%;
+}
+
+#red-dot {
+    height: 0.6rem;
+    width: 0.6rem;
+}
+
+.easing-card {
+    transition: all 0.3s ease-in-out;
+}
+
+.selected {
+    @extend .border-primary
+}
+
+.info-icon {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: $secondary;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+.modal-content {
+    backface-visibility: hidden;
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100vw);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes flipCard {
+    from {
+        transform: rotate3d(0, 1, 0, 180deg);
+    }
+
+    to {
+        transform: rotate3d(0, 1, 0, 0deg);
+    }
+}
